@@ -1,0 +1,54 @@
+# =============================================
+# PulseTrader+ — Git Ignore
+# =============================================
+
+# === Secrets (NEVER commit) ===
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+contracts/.env
+contracts/.env.*
+
+# === Dependencies ===
+node_modules/
+
+# === Build outputs ===
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# === Hardhat / Solidity ===
+contracts/cache/
+contracts/artifacts/
+contracts/typechain-types/
+
+# === Internal / Development ===
+hackathon-context.md
+scripts/normalize-balances.ts
+demo-script.md
+x-promo-post.md
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# === IDE ===
+.vscode/settings.json
+.idea/
+
+# === Debug logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === Docker (runtime) ===
+docker-compose.override.yml

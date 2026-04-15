@@ -1,0 +1,19 @@
+{
+  "name": "pulsetrader-plus",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "build:contracts": "cd contracts && npx hardhat compile",
+    "deploy:testnet": "cd contracts && npx hardhat run scripts/deploy.ts --network xlayer",
+    "test": "cd backend && npm test",
+    "lint": "cd frontend && npx next lint",
+    "start": "cd backend && npm start",
+    "mcp": "cd backend && npm run mcp"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

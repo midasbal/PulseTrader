@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "pulsetrader-plus": {
+      "command": "npx",
+      "args": ["tsx", "backend/src/mcp-server.ts"],
+      "cwd": ".",
+      "env": {
+        "AGENT_PRIVATE_KEY": "${AGENT_PRIVATE_KEY}",
+        "GROQ_API_KEY": "${GROQ_API_KEY}",
+        "XLAYER_RPC_URL": "https://testrpc.xlayer.tech/terigon",
+        "XLAYER_WSS_URL": "wss://xlayertestws.okx.com",
+        "XLAYER_FLASHBLOCKS_RPC": "https://testrpc.xlayer.tech/flashblocks",
+        "XLAYER_CHAIN_ID": "1952",
+        "BUILDER_CODE": "PULSETRDRV1XLYR0",
+        "PUSDC_ADDRESS": "0x9eb8679A851A383D1E2678c29ed92FbB85c72c0E",
+        "PWETH_ADDRESS": "0x3717C06A65CEd56A99e8ffef1c65a9193e991411"
+      }
+    }
+  }
+}

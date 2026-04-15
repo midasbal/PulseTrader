@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="pulse-main" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="pulse-wave" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="30%" stop-color="#22D3EE"/>
+      <stop offset="70%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+    <clipPath id="p-clip">
+      <path d="M80 456 L80 56 L320 56 Q432 56 432 168 Q432 280 320 280 L200 280 L200 456 Z"/>
+    </clipPath>
+  </defs>
+  <!-- Sharp geometric "P" — angular, no border-radius -->
+  <path
+    d="M80 456 L80 56 L320 56 Q432 56 432 168 Q432 280 320 280 L200 280 L200 456 Z"
+    fill="none"
+    stroke="url(#pulse-main)"
+    stroke-width="5"
+    opacity="0.15"
+  />
+  <!-- Solid fill with subtle transparency -->
+  <path
+    d="M96 440 L96 72 L312 72 Q416 72 416 176 Q416 264 312 264 L200 264 L200 440 Z"
+    fill="url(#pulse-main)"
+    opacity="0.08"
+  />
+  <!-- Left vertical bar of P — strong anchor -->
+  <rect x="80" y="56" width="28" height="400" fill="url(#pulse-main)"/>
+  <!-- Top horizontal bar -->
+  <rect x="80" y="56" width="248" height="24" fill="url(#pulse-main)"/>
+  <!-- Right curve of P as angled segments (no curves — faceted) -->
+  <polygon points="328,56 432,112 432,224 328,280 328,256 408,212 408,124 328,80" fill="url(#pulse-main)"/>
+  <!-- Bottom of P bowl — horizontal bar -->
+  <rect x="80" y="256" width="248" height="24" fill="url(#pulse-main)" opacity="0.7"/>
+  <!-- Pulse waveform cutting through center -->
+  <polyline
+    points="0,196 120,196 160,196 192,96 224,296 256,146 288,246 320,196 400,196 512,196"
+    fill="none"
+    stroke="url(#pulse-wave)"
+    stroke-width="8"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+  <!-- Apex tick — the peak moment -->
+  <line x1="192" y1="96" x2="192" y2="82" stroke="#22D3EE" stroke-width="4" opacity="0.6"/>
+</svg>

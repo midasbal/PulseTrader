@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Dev: Frontend (Next.js)",
+			"type": "shell",
+			"command": "cd /Users/taylanbal/okx-hackathon/frontend && npm run dev",
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="fg" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="wv" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#22D3EE"/>
+      <stop offset="60%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <!-- P structure: left bar + top bar + angled bowl + bottom bar -->
+  <rect x="5" y="4" width="2.2" height="24" fill="url(#fg)"/>
+  <rect x="5" y="4" width="15" height="2" fill="url(#fg)"/>
+  <polygon points="20,4 26,7.5 26,14 20,17.5 20,15.5 24,13 24,8.5 20,6" fill="url(#fg)"/>
+  <rect x="5" y="16" width="15" height="1.8" fill="url(#fg)" opacity="0.65"/>
+  <!-- Pulse wave through center -->
+  <polyline
+    points="0,12 7,12 10,12 12,6 14,18 16,9.5 18,15 20,12 25,12 32,12"
+    fill="none"
+    stroke="url(#wv)"
+    stroke-width="1.2"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+</svg>
